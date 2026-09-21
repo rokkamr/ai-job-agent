@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 
 from app.database.database import get_db, init_db
 from app.database.models import Job, Application, ResumeVersion, AgentRun, AgentLog
-from app.scheduler.daily_job import execute_daily_workflow, start_scheduler
 
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
@@ -22,11 +21,13 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    try:
-        start_scheduler()
-        logger.info("FastAPI backend & APScheduler started successfully.")
-    except Exception as e:
-        logger.warning(f"APScheduler bypassed in serverless mode: {e}")
+    if not os.getenv("VERCEL"):
+        try:
+            from app.scheduler.daily_job import start_scheduler
+            start_scheduler()
+            logger.info("FastAPI backend & APScheduler started successfully.")
+        except Exception as e:
+            logger.warning(f"APScheduler bypassed: {e}")
     yield
 
 app = FastAPI(title="AI Job Application Agent Dashboard", version="1.0.0", lifespan=lifespan)
@@ -115,6 +116,7 @@ def get_job_detail(job_id: int, db: Session = Depends(get_db)):
 @app.post("/api/run-now")
 async def trigger_run_now():
     logger.info("Manual trigger received from dashboard UI! Executing daily workflow...")
+    from app.scheduler.daily_job import execute_daily_workflow
     asyncio.create_task(execute_daily_workflow())
     return {"status": "SUCCESS", "message": "Daily Job Agent workflow triggered!"}
 
