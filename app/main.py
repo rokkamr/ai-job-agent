@@ -121,6 +121,9 @@ async def trigger_run_now():
     return {"status": "SUCCESS", "message": "Daily Job Agent workflow triggered!"}
 
 @app.get("/", response_class=HTMLResponse)
+@app.get("/main.py", response_class=HTMLResponse)
+@app.get("/index.py", response_class=HTMLResponse)
+@app.get("/api/index.py", response_class=HTMLResponse)
 def serve_dashboard():
     return """
     <!DOCTYPE html>
