@@ -32,8 +32,36 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="AI Job Application Agent Dashboard", version="1.0.0", lifespan=lifespan)
 
+def ensure_seed_data(db: Session):
+    try:
+        if db.query(Job).count() == 0:
+            seed_path = os.path.join(os.path.dirname(__file__), "database", "seed_jobs.json")
+            if os.path.exists(seed_path):
+                with open(seed_path, "r", encoding="utf-8") as f:
+                    seed_jobs = json.load(f)
+                for item in seed_jobs:
+                    job_rec = Job(
+                        source=item.get("source"),
+                        external_job_id=item.get("external_job_id"),
+                        title=item.get("title"),
+                        company=item.get("company"),
+                        location=item.get("location"),
+                        url=item.get("url"),
+                        description=item.get("description"),
+                        posted_date=item.get("posted_date"),
+                        match_score=item.get("match_score", 0.0),
+                        match_details=item.get("match_details"),
+                        fingerprint=item.get("fingerprint"),
+                        status=item.get("status", "DISCOVERED")
+                    )
+                    db.add(job_rec)
+                db.commit()
+    except Exception as e:
+        logger.warning(f"Seed data insertion skipped: {e}")
+
 @app.get("/api/dashboard/stats")
 def get_dashboard_stats(db: Session = Depends(get_db)):
+    ensure_seed_data(db)
     total_found = db.query(Job).count()
     qualified = db.query(Job).filter(Job.status.in_(["QUALIFIED", "TAILORED", "APPLIED"])).count()
     submitted = db.query(Job).filter(Job.status == "APPLIED").count()
@@ -57,6 +85,7 @@ def get_dashboard_stats(db: Session = Depends(get_db)):
 
 @app.get("/api/jobs")
 def get_jobs(status: str = None, db: Session = Depends(get_db)):
+    ensure_seed_data(db)
     query = db.query(Job)
     if status:
         query = query.filter(Job.status == status)
