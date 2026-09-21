@@ -1,7 +1,6 @@
 import asyncio
 import os
 from typing import Optional
-from playwright.async_api import async_playwright, Browser, BrowserContext, Page
 
 
 class BrowserManager:
@@ -10,20 +9,24 @@ class BrowserManager:
             headless = os.getenv("HEADLESS", "true").lower() == "true"
         self.headless = headless
         self._playwright = None
-        self._browser: Optional[Browser] = None
-        self._context: Optional[BrowserContext] = None
+        self._browser = None
+        self._context = None
 
     async def start(self):
         if not self._browser:
-            self._playwright = await async_playwright().start()
-            self._browser = await self._playwright.chromium.launch(
-                headless=self.headless,
-                args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
-            )
-            self._context = await self._browser.new_context(
-                viewport={"width": 1280, "height": 800},
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            )
+            try:
+                from playwright.async_api import async_playwright
+                self._playwright = await async_playwright().start()
+                self._browser = await self._playwright.chromium.launch(
+                    headless=self.headless,
+                    args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
+                )
+                self._context = await self._browser.new_context(
+                    viewport={"width": 1280, "height": 800},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                )
+            except Exception as e:
+                raise RuntimeError(f"Playwright browser automation not available in current environment: {e}")
 
     async def get_page(self) -> Page:
         if not self._context:
