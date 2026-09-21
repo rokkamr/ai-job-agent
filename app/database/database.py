@@ -5,7 +5,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./job_agent.db")
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    if os.getenv("VERCEL"):
+        DATABASE_URL = "sqlite:////tmp/job_agent.db"
+    else:
+        DATABASE_URL = "sqlite:///./job_agent.db"
 
 # Handle SQLite vs PostgreSQL arguments
 connect_args = {}
@@ -26,4 +31,7 @@ def get_db():
 
 
 def init_db():
-    Base.metadata.create_all(bind=engine)
+    try:
+        Base.metadata.create_all(bind=engine)
+    except Exception as e:
+        print(f"Warning: init_db failed: {e}")

@@ -22,8 +22,11 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    start_scheduler()
-    logger.info("FastAPI backend & APScheduler started successfully.")
+    try:
+        start_scheduler()
+        logger.info("FastAPI backend & APScheduler started successfully.")
+    except Exception as e:
+        logger.warning(f"APScheduler bypassed in serverless mode: {e}")
     yield
 
 app = FastAPI(title="AI Job Application Agent Dashboard", version="1.0.0", lifespan=lifespan)
