@@ -1,0 +1,76 @@
+{
+  "name": "ROKKAM RAJA",
+  "email": "rajarokkam02@gmail.com",
+  "phone": "+91 83743 12812",
+  "location": "Hyderabad",
+  "current_title": "Software Test Engineer / QA Engineer",
+  "summary": "QA Engineer with 1+ year of experience testing web and mobile applications across healthcare staffing and workforce management domains (NurseIO, ShiftWorx, CoreVerify). Skilled in Manual Testing, REST API testing (Postman), mobile testing (Android/iOS, BrowserStack, TestFlight), SQL-based backend validation, and foundational Selenium/Java automation.",
+  "skills": [
+    "Manual Testing",
+    "QA Engineering",
+    "Mobile Testing (Android & iOS)",
+    "API Testing (Postman)",
+    "Automation Testing (Selenium, Java, TestNG, POM)",
+    "SQL",
+    "MySQL",
+    "Jira",
+    "BrowserStack",
+    "TestFlight",
+    "Cross-browser Testing",
+    "AI-Assisted Testing (ChatGPT, Claude)",
+    "Agile / Scrum",
+    "SDLC / STLC"
+  ],
+  "primary_skills": [
+    "Manual Testing",
+    "QA Engineering",
+    "Mobile Testing",
+    "API Testing (Postman)",
+    "Selenium WebDriver",
+    "Java",
+    "SQL",
+    "Jira"
+  ],
+  "experience_years": 1.4,
+  "experience_level": "entry",
+  "job_titles": [
+    "QA Engineer",
+    "Software Test Engineer",
+    "QA Automation Engineer",
+    "Mobile QA Tester",
+    "API Testing Engineer",
+    "Junior Software Tester",
+    "Software Developer"
+  ],
+  "projects": [
+    "NurseIO - Healthcare Staffing Platform QA Testing",
+    "ShiftWorx - Workforce & Shift Management QA Testing",
+    "CoreVerify - Credential & Compliance Verification QA Testing"
+  ],
+  "education": [
+    "B.Tech Computer Science & Engineering - Rajeev Gandhi Memorial College of Engineering and Technology (2020-2024)"
+  ],
+  "search_keywords": [
+    "QA Engineer Hyderabad",
+    "Software Test Engineer Hyderabad",
+    "Automation Tester Hyderabad",
+    "API Tester Hyderabad",
+    "Mobile Tester Hyderabad",
+    "Manual Tester Hyderabad",
+    "QA Tester Remote"
+  ],
+  "role_queries": [
+    "QA Engineer",
+    "Software Test Engineer",
+    "Automation Testing",
+    "API Tester",
+    "Mobile QA",
+    "Manual Tester",
+    "Junior Software Tester"
+  ],
+  "preferred_location": "Hyderabad",
+  "preferred_job_types": [
+    "remote",
+    "hybrid"
+  ]
+}

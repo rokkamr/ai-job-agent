@@ -1,0 +1,72 @@
+candidate:
+  name: "Rokkam Raja"
+  email: "rajarokkam14@gmail.com"
+  phone: "+91 9876543210"
+
+  target_roles:
+    - "QA Engineer"
+    - "Software Tester"
+    - "Manual QA Tester"
+    - "QA Analyst"
+    - "Software Test Engineer"
+
+  experience_years: 1.4
+
+  skills:
+    - Manual Testing
+    - Functional Testing
+    - Regression Testing
+    - Smoke Testing
+    - UAT
+    - E2E Testing
+    - API Testing
+    - Postman
+    - REST API
+    - SQL
+    - MySQL
+    - Jira
+    - BrowserStack
+    - TestFlight
+    - Selenium
+    - Java
+    - TestNG
+    - JUnit
+    - Agile
+    - SDLC
+    - STLC
+
+  domains:
+    - Healthcare
+    - Healthcare Staffing
+    - Workforce Management
+
+  employment_type:
+    - Full-time
+
+  work_preference:
+    - Remote
+    - Hybrid
+
+  job_sources:
+    - LinkedIn
+    - Naukri
+    - Foundit
+    - RemoteOK
+    - Arbeitnow
+
+  auto_apply: true
+  minimum_match_score: 80
+  daily_application_limit: 20
+
+schedule:
+  timezone: "Asia/Kolkata"
+  time: "00:00"
+
+predefined_answers:
+  authorized_to_work_in_india: true
+  will_require_visa_sponsorship: false
+  notice_period_days: 15
+  current_location: "Hyderabad, Telangana, India"
+  preferred_location: "Hyderabad / Remote"
+  linkedin_url: "https://linkedin.com/in/rokkam-raja"
+  github_url: "https://github.com/rokkamraja"

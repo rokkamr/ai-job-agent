@@ -1,0 +1,61 @@
+# ============================================================
+#   AI Resume Job Finder - Configuration File
+#   Edit this file to customize your job search settings
+# ============================================================
+
+# --- Gemini AI (Required) ---
+# Get your free key at: https://aistudio.google.com/app/apikey
+# Or set the GEMINI_API_KEY environment variable
+gemini:
+  api_key: "AQ.Ab8RN6I9j1INU5BERGzbIjFLy7KzbLq974z979MViYQt5WxPMg"
+  model: "gemini-3.6-flash"
+
+# --- Your Resume ---
+resume:
+  path: "resume/resume.pdf"   # Relative to the resume_agent folder
+
+# --- Job Search Preferences ---
+job_preferences:
+  location: "Hyderabad"
+  job_types:
+    - "remote"
+    - "hybrid"
+  experience_years: 1.4          # 1 year 5 months ≈ 1.4 years
+  experience_level: "entry"      # entry | mid | senior
+  max_jobs_to_fetch: 30          # Max raw jobs to fetch per source
+  max_jobs_to_report: 15         # Top N matched jobs in the report
+  min_match_score: 40            # Only include jobs above this score (0-100)
+  custom_keywords: []            # Extra keywords (auto-extracted if empty)
+
+# --- Email Delivery ---
+# Use a Gmail App Password (NOT your regular Gmail password)
+# Guide: https://support.google.com/accounts/answer/185833
+email:
+  enabled: true
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: "rajarokkam02@gmail.com"
+  sender_password: "vmtslgelqpvtfgnk"
+  recipient_email: "rajarokkam02@gmail.com"
+  subject: "🤖 Your Daily Job Matches — {date}"
+
+# --- Optional Job APIs (Get more job listings) ---
+# JSearch via RapidAPI — Free 200 req/month
+# Sign up: https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch
+apis:
+  rapidapi_key: ""
+
+  # Adzuna India — Free 1000 req/month
+  # Sign up: https://developer.adzuna.com/
+  adzuna_app_id: ""
+  adzuna_app_key: ""
+
+# --- Scheduling ---
+schedule:
+  time: "00:00"           # Daily run time (24-hour HH:MM)
+  task_name: "AIJobFinder"
+
+# --- Output ---
+output:
+  directory: "output"
+  keep_reports_days: 30   # Delete reports older than this

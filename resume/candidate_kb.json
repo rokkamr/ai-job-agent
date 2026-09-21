@@ -1,0 +1,62 @@
+{
+  "candidate": {
+    "name": "Rokkam Raja",
+    "email": "rajarokkam14@gmail.com",
+    "phone": "+91 9876543210",
+    "experience_years": 1.4,
+    "experience_summary": "1 year 4 months QA experience"
+  },
+  "skills": [
+    "Manual Testing",
+    "Functional Testing",
+    "Regression Testing",
+    "Smoke Testing",
+    "UAT",
+    "E2E Testing",
+    "API Testing",
+    "Postman",
+    "REST API",
+    "SQL",
+    "MySQL",
+    "Jira",
+    "BrowserStack",
+    "TestFlight",
+    "Selenium",
+    "Java",
+    "TestNG",
+    "JUnit",
+    "Agile",
+    "SDLC",
+    "STLC"
+  ],
+  "target_roles": [
+    "QA Engineer",
+    "Software Tester",
+    "Manual QA Tester",
+    "QA Analyst",
+    "Software Test Engineer"
+  ],
+  "domains": [
+    "Healthcare",
+    "Healthcare Staffing",
+    "Workforce Management"
+  ],
+  "projects": [
+    "NurseIO - Healthcare Staffing Platform QA Testing",
+    "ShiftWorx - Workforce & Shift Management QA Testing",
+    "CoreVerify - Credential & Compliance Verification QA Testing"
+  ],
+  "education": [
+    "B.Tech Computer Science & Engineering - Rajeev Gandhi Memorial College of Engineering and Technology (2020-2024)"
+  ],
+  "predefined_answers": {
+    "authorized_to_work_in_india": true,
+    "will_require_visa_sponsorship": false,
+    "notice_period_days": 15,
+    "current_location": "Hyderabad, Telangana, India",
+    "preferred_location": "Hyderabad / Remote",
+    "linkedin_url": "https://linkedin.com/in/rokkam-raja",
+    "github_url": "https://github.com/rokkamraja"
+  },
+  "raw_text": "ROKKAM RAJA\nSoftware Test Engineer | Manual & Mobile QA | API Testing | Automation (Selenium) | AI-Assisted Testing\n+91 83743 12812  |  rajarokkam02@gmail.com  |  linkedin.com/in/rokkam-raja-b312391aa  |  Kurnool, Andhra Pradesh\nPROFESSIONAL SUMMARY\nQA Engineer with 1+ year of experience testing web and mobile applications across healthcare staffing and workforce management \ndomains (NurseIO, ShiftWorx, CoreVerify). Skilled in Manual Testing (Functional, Regression, Smoke, UAT, E2E), REST API testing \n(Postman), cross-browser/cross-platform testing (BrowserStack, TestFlight), SQL-based backend validation, and foundational \nSelenium/Java automation. Active user of AI tools (ChatGPT, Claude) to accelerate test design and defect analysis. Strong in \nAgile/Scrum, Jira defect management, and release validation.\nCORE SKILLS\nManual Testing: Functional, Smoke, Sanity, Regression, Integration, System, UAT, E2E, Exploratory, Negative, Boundary Value, \nUsability, Compatibility\nMobile Testing: Android & iOS (native/responsive), BrowserStack App Live, TestFlight, push notifications, interruption, \ninstall/update/network testing\nAPI Testing: REST APIs with Postman \u2014 collections, environments, HTTP methods, status codes, JSON schema validation, \npositive/negative scenarios\nAutomation: Selenium WebDriver, Java, TestNG, Page Object Model (POM), XPath/CSS locators \u2014 foundational\nAI-Assisted Testing: ChatGPT & Claude for test case/scenario generation, edge-case identification, test data creation, defect report \ndrafting\nDatabase: SQL queries for backend data validation \u2014 joins, filters, data accuracy checks (MySQL)\nTools: Jira, Postman, BrowserStack, TestFlight, MS Excel (RTM/test cases), Git basics, Chrome DevTools\nMethodologies: SDLC, STLC, Agile/Scrum, Bug Life Cycle, Requirement Traceability Matrix (RTM), Severity/Priority, Test Reporting\nPROFESSIONAL EXPERIENCE\nJunior Software Tester \u2014 TMIX Info Soft Pvt Ltd\nMay 2025 \u2013 Present\nTMIX Info Soft Pvt Ltd   Hyderabad, Telangana, India\n\u2022 Designed 150+ test cases per release cycle for web and mobile applications across 3 platforms (NurseIO, ShiftWorx, CoreVerify), \ncovering functional, regression, smoke and UAT scenarios.\n\u2022 Executed 500+ test cases across 8+ release cycles; maintained a defect detection rate of 95%+ in pre-release phases through \nthorough regression and smoke testing.\n\u2022 Logged and managed 80+ defects in Jira with clear reproduction steps, severity/priority tagging and evidence; achieved a \nreopen rate below 10% through detailed defect documentation.\n\u2022 Reduced test case design time by ~30% by leveraging AI tools (ChatGPT/Claude) for test scenario generation, edge-case \nidentification and test data creation.\n\u2022 Performed cross-browser testing (Chrome, Firefox, Safari, Edge) on Windows/macOS and mobile testing (Android/iOS) on 10+ \ndevice configurations using BrowserStack and TestFlight.\n\u2022 Validated REST APIs using Postman across 3 platforms \u2014 verified request/response, status codes, JSON schema and negative \nscenarios for 40+ API endpoints.\n\u2022 Executed SQL queries against MySQL databases for backend data validation \u2014 verified data accuracy, joins and field-level \nconsistency for test scenarios.\n\u2022 Participated in Agile/Scrum ceremonies across 8+ sprints; published daily/weekly test execution and defect summary reports to \nthe team.\nPROJECTS\nNurseIO\nHealthcare Staffing Platform \u2014 QA / Testing Resource\nNurseIO is an on-demand healthcare staffing marketplace that connects healthcare facilities with credentialed HCPs (Healthcare \nProfessionals) for shift-based work. As part of the QA team, I owned end-to-end test coverage for the shift lifecycle, HCP onboarding, \ncredential/compliance checks, GPS-based attendance, and the payment/payout pipeline across the Admin, Facility and HCP roles. \nThe platform's real-money payouts and location-based clock-in logic made accuracy and edge-case coverage especially critical, so \ntesting combined functional validation with close attention to failure paths, timing edge cases, and cross-role data consistency across \nthe full shift journey from posting to completion.\n\u2022 Tested end-to-end shift lifecycle (creation \u2192 broadcast \u2192 assignment \u2192 completion) across Admin, Facility and HCP roles; \nvalidated GPS/geofence-based clock-in/out and timesheet generation.\n\u2022 Executed mobile testing on iOS via TestFlight and on Android/iOS real devices via BrowserStack; validated push notifications, \nSMS/email alerts and in-app messaging.\n\u2022 Verified HCP onboarding, document upload/compliance workflows and payment/payout calculations including failure and edge \ncases.\n\u2022 Performed REST API validation (Postman) and SQL backend checks (MySQL); designed and maintained regression suites across \nreleases.\nEnvironment: Web (Chrome, Firefox, Safari, Edge / Windows, macOS), Android & iOS, TestFlight, BrowserStack, Jira, Postman, MySQL, \nAgile/Scrum\nShiftWorx\nWorkforce & Shift Management Platform \u2014 QA / Testing Resource\nShiftWorx is a workforce management application used by managers and staff to handle scheduling, shift swaps, attendance tracking \nand payroll-ready reporting. My testing focus was on the scheduling engine and its many conflict scenarios \u2014 overlapping shifts, \nswap approvals, NFC/QR check-ins and behavior under offline or poor-network conditions \u2014 since these directly affected payroll \naccuracy and staff trust in the system. I worked closely with AI tools to systematically generate edge cases for complex scheduling \nconflicts that would have been easy to miss through manual test design alone, then validated the underlying data through API and \nSQL checks to confirm timesheets and overtime calculations stayed accurate under real-world conditions.\n\u2022 Tested shift scheduling, swap/offer workflows, NFC/QR-based check-in and offline/poor-network behaviour for Manager and \nStaff roles.\n\u2022 Validated payroll-ready timesheet exports, overtime calculations and notification triggers; executed cross-browser/OS \nregression on BrowserStack.\n\u2022 Used AI tools to generate edge cases for complex scheduling conflict scenarios; performed API testing (Postman) and SQL data \nvalidation.\nEnvironment: Web + Android/iOS, BrowserStack, TestFlight, Jira, Postman, MySQL, Agile/Scrum\nCoreVerify\nCredential & Compliance Verification Module \u2014 QA / Testing Resource\nCoreVerify is the credential and compliance verification module integrated with NurseIO, responsible for gating shift eligibility based \non a healthcare professional's document status. Because a failure here could let an unqualified or non-compliant worker onto a shift, \ntesting emphasized negative and adversarial scenarios: invalid, expired and tampered documents, OCR misreads, and edge cases \naround renewal and expiry timing. I also validated the API integration between CoreVerify and NurseIO to confirm that compliance \nstatus was correctly reflected in shift eligibility in real time, and used SQL to verify audit trails for every approval/rejection decision, \nensuring a defensible compliance record.\n\u2022 Tested document upload (camera/file), OCR-read data verification, approval/rejection workflows and expiry/renewal alerts.\n\u2022 Validated API integration with NurseIO (shift eligibility based on compliance status); performed negative testing for \ninvalid/expired/tampered documents and verified audit trails via SQL.\nEnvironment: Web, REST APIs (Postman), Jira, MySQL, BrowserStack\nEDUCATION\nB.Tech, Computer Science & Engineering \u2014 Rajeev Gandhi Memorial College of Engineering and Technology\n2020 \u2013 2024\nNandyala, Andhra Pradesh | Aggregate: 70%\nLANGUAGES\nEnglish | Telugu | Hindi"
+}

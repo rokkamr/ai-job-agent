@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Daily Job Matches — September 16, 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0f1e;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 100%);
+      padding: 48px 32px;
+      text-align: center;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 60% 40%, rgba(139,92,246,0.15) 0%, transparent 60%);
+    }
+    .header-emoji { font-size: 3rem; display: block; margin-bottom: 12px; }
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .header-sub {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    /* ---- STATS ---- */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .stat {
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 16px 28px;
+      backdrop-filter: blur(10px);
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #a78bfa;
+    }
+    .stat-label { font-size: 0.8rem; color: #94a3b8; margin-top: 4px; }
+
+    /* ---- PROFILE BANNER ---- */
+    .profile-banner {
+      background: linear-gradient(90deg, rgba(14,165,233,0.1), rgba(139,92,246,0.1));
+      border: 1px solid rgba(14,165,233,0.2);
+      border-radius: 16px;
+      margin: 32px auto;
+      max-width: 900px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-avatar {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+    .profile-info h3 { font-size: 1.1rem; font-weight: 700; color: #e2e8f0; }
+    .profile-info p { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+
+    /* ---- MAIN CONTENT ---- */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px 60px; }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #c4b5fd;
+      margin: 32px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(196,181,253,0.2);
+    }
+
+    /* ---- JOB CARDS ---- */
+    .job-card {
+      background: linear-gradient(145deg, #111827, #1a2234);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .job-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+    }
+    .job-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(139,92,246,0.3);
+    }
+
+    .job-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .rank {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #4b5563;
+      min-width: 36px;
+      padding-top: 4px;
+    }
+    .job-info { flex: 1; }
+    .job-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 6px;
+    }
+    .company {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .location { margin-left: 12px; color: #64748b; }
+
+    .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+    }
+    .source-badge {
+      font-size: 0.78rem;
+      color: #64748b;
+      background: rgba(255,255,255,0.05);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .salary { font-size: 0.85rem; color: #34d399; font-weight: 600; }
+
+    /* ---- SCORE CIRCLE ---- */
+    .score-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: rgba(0,0,0,0.3);
+    }
+    .score-number { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+    .score-pct { font-size: 0.75rem; font-weight: 600; opacity: 0.7; }
+    .score-label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; margin-top: 2px; text-align: center; }
+
+    /* ---- SCORE BAR ---- */
+    .score-bar-container {
+      background: rgba(255,255,255,0.06);
+      height: 6px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .score-bar {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.6s ease;
+    }
+
+    /* ---- REASONS / GAPS ---- */
+    .match-reasons, .gaps {
+      font-size: 0.88rem;
+      margin-bottom: 14px;
+    }
+    .match-reasons strong, .gaps strong {
+      color: #c4b5fd;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .match-reasons ul, .gaps ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .match-reasons li { color: #cbd5e1; }
+    .gaps li { color: #fbbf24; }
+
+    /* ---- COVER LETTER ---- */
+    .cover-letter {
+      background: rgba(139,92,246,0.08);
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      font-size: 0.88rem;
+    }
+    .cover-letter strong { color: #c4b5fd; display: block; margin-bottom: 8px; }
+    .cover-letter p { color: #94a3b8; line-height: 1.6; font-style: italic; }
+
+    /* ---- TAGS ---- */
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      margin: 3px 3px 3px 0;
+    }
+
+    /* ---- CARD FOOTER ---- */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .apply-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(90deg, #7c3aed, #4f46e5);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .apply-btn:hover { transform: translateY(-1px); opacity: 0.9; }
+    .posted-date { font-size: 0.78rem; color: #4b5563; }
+
+    /* ---- FOOTER ---- */
+    .page-footer {
+      text-align: center;
+      padding: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #374151;
+      font-size: 0.8rem;
+      margin-top: 40px;
+    }
+    .page-footer a { color: #6366f1; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 1.5rem; }
+      .stats-bar { gap: 16px; }
+      .job-card-header { flex-wrap: wrap; }
+      .score-circle { width: 72px; height: 72px; }
+      .score-number { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="header-emoji">🤖</span>
+    <h1>Your Daily Job Matches</h1>
+    <p class="header-sub">September 16, 2026 • AI-powered by Gemini • Resume match for <strong style="color:#a78bfa">ROKKAM RAJA</strong></p>
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value">15</div>
+        <div class="stat-label">Jobs Found</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="color:#22c55e">92%</div>
+        <div class="stat-label">Top Match Score</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="color:#f59e0b">73%</div>
+        <div class="stat-label">Average Score</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- PROFILE BANNER -->
+    <div class="profile-banner">
+      <div class="profile-avatar">R</div>
+      <div class="profile-info">
+        <h3>ROKKAM RAJA — Software Developer</h3>
+        <p>🛠️ Skills: Java, SQL, MySQL, REST API, Git, CSS &nbsp;•&nbsp; 📍 Hyderabad &nbsp;•&nbsp; 🏠 Remote/Hybrid</p>
+      </div>
+    </div>
+
+    
+        <div class="section-title">🚀 Auto-Application Status (0/15 Applied)</div>
+        <div style="margin-bottom:28px;">
+          
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Software Developer (Java)</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Charles Schwab India</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Java Backend Engineer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Ascendion</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Java Spring Boot Backend Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Prasanz</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Backend Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Letitbex AI</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/backend-developer-at-letitbex-ai-4463299404" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Full Stack Java Engineer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Redwood Software</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Java Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Clera</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on RemoteOK — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://remoteOK.com/remote-jobs/remote-java-developer-clera-1136188" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Software Engineer - Java, Spring Boot and Microservices</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Apple</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Software Engineer - Backend Services</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Truveta</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/software-engineer-backend-services-at-truveta-4434639696" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Microservices JAVA-Software Engineer II</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Deloitte</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Microservices JAVA with AWS-Software Engineer II</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Deloitte</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Software Developer - Python, Hyderabad</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Schrödinger</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/software-developer-python-hyderabad-at-schr%C3%B6dinger-4448747440" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Python Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Tata Consultancy Services</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/python-developer-at-tata-consultancy-services-4463234487" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Python Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Infosys</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/python-developer-at-infosys-4457672035" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Python Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 ASTIKA SOFTWARE TECHNOLOGIES PRIVATE LIMITED</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/python-developer-at-astika-software-technologies-private-limited-4458865973" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Python Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 Rehlat</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Direct 1-Click apply link ready on LinkedIn — click below to submit</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#8b5cf6; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">1-CLICK APPLY READY 🚀</span>
+        <a href="https://in.linkedin.com/jobs/view/python-developer-at-rehlat-4456499551" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+        </div>
+        
+
+    <!-- JOB LISTINGS -->
+    <div class="section-title">🎯 Top Job Matches</div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#1</div>
+        <div class="job-info">
+          <div class="job-title">Software Developer (Java)</div>
+          <div class="company">🏢 Charles Schwab India
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">92</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Excellent Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:92%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Exact title match: Software Developer (Java)</li><li>✅ Matches entry level experience (1.4 years)</li><li>✅ Preferred hybrid setup in Hyderabad</li></ul>
+      </div>
+
+      
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Software Developer (Java) role at Charles Schwab India. Leveraging my 1.4 years of hands-on experience with Java, SQL, MySQL, and REST APIs, I look forward to contributing to your fintech systems in Hyderabad."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#2</div>
+        <div class="job-info">
+          <div class="job-title">Java Backend Engineer</div>
+          <div class="company">🏢 Ascendion
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">90</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Excellent Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:90%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Exact domain match: Java Backend Engineer</li><li>✅ Perfect match for skills (Java, SQL, REST API, Git)</li><li>✅ Preferred location (Hyderabad) and hybrid setup</li></ul>
+      </div>
+
+      
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Java Backend Engineer role at Ascendion. With 1.4 years of experience delivering Java backend code, working with REST APIs, and querying MySQL databases, I am eager to join your engineering team in Hyderabad."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#3</div>
+        <div class="job-info">
+          <div class="job-title">Java Spring Boot Backend Developer</div>
+          <div class="company">🏢 Prasanz
+            <span class="location">📍 Greater Hyderabad Area</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">88</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:88%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Direct skill match in Java backend development</li><li>✅ Preferred target location (Greater Hyderabad Area) and hybrid mode</li><li>✅ Appropriate experience level fit</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Spring Boot specialized framework experience</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Java Spring Boot Backend Developer role at Prasanz. With 1.4 years of practical experience building Java services, writing SQL queries, and consuming REST APIs in Hyderabad, I am ideal for your backend engineering team."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#4</div>
+        <div class="job-info">
+          <div class="job-title">Backend Developer</div>
+          <div class="company">🏢 Letitbex AI
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">88</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:88%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Exact target title match: Backend Developer</li><li>✅ Matches entry level experience (1.4 years)</li><li>✅ Matches skills (Java, SQL, MySQL, REST API, Git)</li><li>✅ Preferred location (Hyderabad) and hybrid model</li></ul>
+      </div>
+
+      
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Backend Developer role at Letitbex AI. With 1.4 years of experience developing robust backend services using Java, REST APIs, and MySQL in Hyderabad, I am ready to contribute immediately to your product architecture."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/backend-developer-at-letitbex-ai-4463299404" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#5</div>
+        <div class="job-info">
+          <div class="job-title">Full Stack Java Engineer</div>
+          <div class="company">🏢 Redwood Software
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">86</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:86%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Full stack combination fits candidate profile (Java, SQL, REST API, CSS)</li><li>✅ Preferred location (Hyderabad) and hybrid mode</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Modern JavaScript frontend frameworks</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Full Stack Java Engineer role at Redwood Software. With 1.4 years of experience building Java REST APIs, managing MySQL databases, and working with CSS, I am eager to deliver full-stack features for your team."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#6</div>
+        <div class="job-info">
+          <div class="job-title">Java Developer</div>
+          <div class="company">🏢 Clera
+            <span class="location">📍 Remote</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#0ea5e9;color:#fff">
+              REMOTE
+            </span>
+            <span class="source-badge">🔗 RemoteOK</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">85</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:85%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Direct alignment with primary tech stack (Java, REST API, backend development)</li><li>✅ Fully remote work model matches candidate preferences</li><li>✅ Early-stage team environment aligns well with full-stack / backend developer background</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Kubernetes</li><li>📌 Distributed AI systems</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Java Developer role at Clera. With 1.4 years of experience building backend systems and REST APIs using Java and SQL, I am eager to contribute to your high-impact engineering team. I look forward to helping scale your Kubernetes-based AI infrastructure."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://remoteOK.com/remote-jobs/remote-java-developer-clera-1136188" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: 2026-08-05</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#7</div>
+        <div class="job-info">
+          <div class="job-title">Software Engineer - Java, Spring Boot and Microservices</div>
+          <div class="company">🏢 Apple
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">82</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:82%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Primary skill match (Java backend development)</li><li>✅ Top-tier tech company location in Hyderabad (hybrid)</li><li>✅ Core technology alignment</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Spring Boot microservices framework mastery</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Software Engineer - Java, Spring Boot and Microservices role at Apple. With 1.4 years of software development experience centered around Java, SQL databases, and REST APIs, I am eager to bring my dedication to Apple's engineering teams."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#8</div>
+        <div class="job-info">
+          <div class="job-title">Software Engineer - Backend Services</div>
+          <div class="company">🏢 Truveta
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">78</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Good Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:78%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Backend focus aligns with core skills in Java, REST APIs, and SQL</li><li>✅ Preferred location (Hyderabad) and hybrid work mode</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Advanced backend architecture</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Software Engineer - Backend Services role at Truveta. With 1.4 years of hands-on experience building backend REST APIs and working with MySQL databases in Hyderabad, I am eager to contribute to your data platform."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-backend-services-at-truveta-4434639696" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#9</div>
+        <div class="job-info">
+          <div class="job-title">Microservices JAVA-Software Engineer II</div>
+          <div class="company">🏢 Deloitte
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">68</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Good Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:68%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Primary skill match in Java backend development</li><li>✅ Preferred location (Hyderabad) and hybrid setup</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Microservices architecture depth</li><li>📌 Level II experience requirement</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Microservices JAVA-Software Engineer II role at Deloitte. With 1.4 years of backend experience in Java, SQL, and REST APIs in Hyderabad, I am well-prepared to support Deloitte's client enterprise solutions."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#10</div>
+        <div class="job-info">
+          <div class="job-title">Microservices JAVA with AWS-Software Engineer II</div>
+          <div class="company">🏢 Deloitte
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">65</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Good Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:65%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Matches primary tech stack in Java</li><li>✅ Preferred hybrid mode in Hyderabad</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 AWS Cloud services</li><li>📌 Level II experience level gap</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Microservices JAVA with AWS-Software Engineer II role at Deloitte. My experience developing Java backend applications with REST APIs and databases aligns well with Deloitte's modern cloud engineering projects."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#11</div>
+        <div class="job-info">
+          <div class="job-title">Software Developer - Python, Hyderabad</div>
+          <div class="company">🏢 Schrödinger
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">58</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Fair Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:58%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Target title match for Python Developer</li><li>✅ Preferred location (Hyderabad) and hybrid mode</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Python programming language core skills</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Software Developer - Python, Hyderabad role at Schrödinger. Although my primary backend experience is in Java and REST APIs, my strong programming fundamentals and target focus on Python make me a quick learner."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-developer-python-hyderabad-at-schr%C3%B6dinger-4448747440" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#12</div>
+        <div class="job-info">
+          <div class="job-title">Python Developer</div>
+          <div class="company">🏢 Tata Consultancy Services
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">58</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Fair Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:58%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Target title match (Python Developer)</li><li>✅ Hyderabad location and hybrid model</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Python programming language</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Python Developer role at Tata Consultancy Services. Having spent 1.4 years working with database systems, Git version control, and web services in Hyderabad, I am eager to contribute to TCS's technology projects."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/python-developer-at-tata-consultancy-services-4463234487" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#13</div>
+        <div class="job-info">
+          <div class="job-title">Python Developer</div>
+          <div class="company">🏢 Infosys
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">58</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Fair Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:58%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Target title match (Python Developer)</li><li>✅ Hyderabad location and hybrid model</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Python programming language</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Python Developer role at Infosys. With 1.4 years of practical software development experience including SQL and Git, I am enthusiastic about applying my developer skillset at Infosys in Hyderabad."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/python-developer-at-infosys-4457672035" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#14</div>
+        <div class="job-info">
+          <div class="job-title">Python Developer</div>
+          <div class="company">🏢 ASTIKA SOFTWARE TECHNOLOGIES PRIVATE LIMITED
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">55</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Fair Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:55%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Target title match (Python Developer)</li><li>✅ Hyderabad location and hybrid model</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Python programming language</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Python Developer role at ASTIKA SOFTWARE TECHNOLOGIES PRIVATE LIMITED. With 1.4 years of backend experience using REST APIs, Git, and SQL databases, I am looking forward to transitioning my strong software logic to Python."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/python-developer-at-astika-software-technologies-private-limited-4458865973" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#15</div>
+        <div class="job-info">
+          <div class="job-title">Python Developer</div>
+          <div class="company">🏢 Rehlat
+            <span class="location">📍 Hyderabad, Telangana, India</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 LinkedIn</span>
+            
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">55</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Fair Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:55%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Target title match (Python Developer)</li><li>✅ Hyderabad location and hybrid model</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Python programming language</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Python Developer role at Rehlat. Bringing 1.4 years of experience in backend development, database design with MySQL, and REST APIs, I am eager to apply my skills to Rehlat's travel tech platform in Hyderabad."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://in.linkedin.com/jobs/view/python-developer-at-rehlat-4456499551" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: Recently</span>
+      </div>
+    </div>
+    
+
+  </div>
+
+  <div class="page-footer">
+    <p>Generated by <strong>AI Resume Job Finder</strong> &nbsp;•&nbsp; September 16, 2026 &nbsp;•&nbsp; Powered by Google Gemini</p>
+    <p style="margin-top:6px">Jobs sourced from RemoteOK, Arbeitnow, JSearch &amp; Adzuna</p>
+  </div>
+
+</body>
+</html>

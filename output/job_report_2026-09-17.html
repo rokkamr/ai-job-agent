@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Daily Job Matches — September 17, 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0f1e;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 100%);
+      padding: 48px 32px;
+      text-align: center;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 60% 40%, rgba(139,92,246,0.15) 0%, transparent 60%);
+    }
+    .header-emoji { font-size: 3rem; display: block; margin-bottom: 12px; }
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .header-sub {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    /* ---- STATS ---- */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .stat {
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 16px 28px;
+      backdrop-filter: blur(10px);
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #a78bfa;
+    }
+    .stat-label { font-size: 0.8rem; color: #94a3b8; margin-top: 4px; }
+
+    /* ---- PROFILE BANNER ---- */
+    .profile-banner {
+      background: linear-gradient(90deg, rgba(14,165,233,0.1), rgba(139,92,246,0.1));
+      border: 1px solid rgba(14,165,233,0.2);
+      border-radius: 16px;
+      margin: 32px auto;
+      max-width: 900px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-avatar {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+    .profile-info h3 { font-size: 1.1rem; font-weight: 700; color: #e2e8f0; }
+    .profile-info p { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+
+    /* ---- MAIN CONTENT ---- */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px 60px; }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #c4b5fd;
+      margin: 32px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(196,181,253,0.2);
+    }
+
+    /* ---- JOB CARDS ---- */
+    .job-card {
+      background: linear-gradient(145deg, #111827, #1a2234);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .job-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+    }
+    .job-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(139,92,246,0.3);
+    }
+
+    .job-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .rank {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #4b5563;
+      min-width: 36px;
+      padding-top: 4px;
+    }
+    .job-info { flex: 1; }
+    .job-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 6px;
+    }
+    .company {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .location { margin-left: 12px; color: #64748b; }
+
+    .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+    }
+    .source-badge {
+      font-size: 0.78rem;
+      color: #64748b;
+      background: rgba(255,255,255,0.05);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .salary { font-size: 0.85rem; color: #34d399; font-weight: 600; }
+
+    /* ---- SCORE CIRCLE ---- */
+    .score-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: rgba(0,0,0,0.3);
+    }
+    .score-number { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+    .score-pct { font-size: 0.75rem; font-weight: 600; opacity: 0.7; }
+    .score-label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; margin-top: 2px; text-align: center; }
+
+    /* ---- SCORE BAR ---- */
+    .score-bar-container {
+      background: rgba(255,255,255,0.06);
+      height: 6px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .score-bar {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.6s ease;
+    }
+
+    /* ---- REASONS / GAPS ---- */
+    .match-reasons, .gaps {
+      font-size: 0.88rem;
+      margin-bottom: 14px;
+    }
+    .match-reasons strong, .gaps strong {
+      color: #c4b5fd;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .match-reasons ul, .gaps ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .match-reasons li { color: #cbd5e1; }
+    .gaps li { color: #fbbf24; }
+
+    /* ---- COVER LETTER ---- */
+    .cover-letter {
+      background: rgba(139,92,246,0.08);
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      font-size: 0.88rem;
+    }
+    .cover-letter strong { color: #c4b5fd; display: block; margin-bottom: 8px; }
+    .cover-letter p { color: #94a3b8; line-height: 1.6; font-style: italic; }
+
+    /* ---- TAGS ---- */
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(99,102,241,0.15);
+      color: #a5b4fc;
+      margin: 3px 3px 3px 0;
+    }
+
+    /* ---- CARD FOOTER ---- */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .apply-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(90deg, #7c3aed, #4f46e5);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .apply-btn:hover { transform: translateY(-1px); opacity: 0.9; }
+    .posted-date { font-size: 0.78rem; color: #4b5563; }
+
+    /* ---- FOOTER ---- */
+    .page-footer {
+      text-align: center;
+      padding: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #374151;
+      font-size: 0.8rem;
+      margin-top: 40px;
+    }
+    .page-footer a { color: #6366f1; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 1.5rem; }
+      .stats-bar { gap: 16px; }
+      .job-card-header { flex-wrap: wrap; }
+      .score-circle { width: 72px; height: 72px; }
+      .score-number { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="header-emoji">🤖</span>
+    <h1>Your Daily Job Matches</h1>
+    <p class="header-sub">September 17, 2026 • AI-powered by Gemini • Resume match for <strong style="color:#a78bfa">Demo Candidate</strong></p>
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Jobs Found</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="color:#22c55e">88%</div>
+        <div class="stat-label">Top Match Score</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="color:#f59e0b">75%</div>
+        <div class="stat-label">Average Score</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- PROFILE BANNER -->
+    <div class="profile-banner">
+      <div class="profile-avatar">D</div>
+      <div class="profile-info">
+        <h3>Demo Candidate — Software Developer</h3>
+        <p>🛠️ Skills: Python, React, SQL, REST APIs, Django &nbsp;•&nbsp; 📍 Hyderabad &nbsp;•&nbsp; 🏠 Remote/Hybrid</p>
+      </div>
+    </div>
+
+    
+        <div class="section-title">🚀 Auto-Application Status (0/3 Applied)</div>
+        <div style="margin-bottom:28px;">
+          
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Python Backend Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 CloudTech Solutions</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Already applied in a previous run</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#64748b; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">ALREADY APPLIED ⏩</span>
+        <a href="https://example.com/apply/python-backend" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Full Stack Developer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 FinEdge Startup</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Already applied in a previous run</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#64748b; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">ALREADY APPLIED ⏩</span>
+        <a href="https://example.com/apply/fullstack" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:14px 18px; margin-bottom:10px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#f1f5f9; font-size:0.95rem;">Junior Data Engineer</strong>
+        <span style="color:#94a3b8; font-size:0.85rem; margin-left:8px;">🏢 DataWave Analytics</span>
+        <p style="color:#64748b; font-size:0.78rem; margin-top:4px;">Already applied in a previous run</p>
+      </div>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="background:#64748b; color:#fff; font-size:0.72rem; font-weight:700; padding:4px 12px; border-radius:20px;">ALREADY APPLIED ⏩</span>
+        <a href="https://example.com/apply/data-engineer" target="_blank" style="color:#8b5cf6; font-size:0.82rem; text-decoration:none;">View Job →</a>
+      </div>
+    </div>
+    
+        </div>
+        
+
+    <!-- JOB LISTINGS -->
+    <div class="section-title">🎯 Top Job Matches</div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#1</div>
+        <div class="job-info">
+          <div class="job-title">Python Backend Developer</div>
+          <div class="company">🏢 CloudTech Solutions
+            <span class="location">📍 Remote (India)</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#0ea5e9;color:#fff">
+              REMOTE
+            </span>
+            <span class="source-badge">🔗 Test</span>
+            <span class="salary">💰 ₹6–10 LPA</span>
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">88</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Strong Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:88%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Python skills directly match the job requirements</li><li>✅ Experience level aligns with junior/entry requirements</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 Docker</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Python Backend Developer role at CloudTech Solutions. My background in Python and web development makes me a strong fit for this opportunity."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://example.com/apply/python-backend" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: 2026-09-17</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#2</div>
+        <div class="job-info">
+          <div class="job-title">Full Stack Developer</div>
+          <div class="company">🏢 FinEdge Startup
+            <span class="location">📍 Hyderabad (Hybrid)</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#8b5cf6;color:#fff">
+              HYBRID
+            </span>
+            <span class="source-badge">🔗 Test</span>
+            <span class="salary">💰 ₹7–11 LPA</span>
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#22c55e; color:#22c55e">
+          <span class="score-number">75</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Good Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:75%; background:linear-gradient(90deg, #22c55e, #16a34a)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Python skills directly match the job requirements</li><li>✅ Experience level aligns with junior/entry requirements</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 AWS</li><li>📌 Redis</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Full Stack Developer role at FinEdge Startup. My background in Python and web development makes me a strong fit for this opportunity."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://example.com/apply/fullstack" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: 2026-09-17</span>
+      </div>
+    </div>
+    
+    <div class="job-card">
+      <div class="job-card-header">
+        <div class="rank">#3</div>
+        <div class="job-info">
+          <div class="job-title">Junior Data Engineer</div>
+          <div class="company">🏢 DataWave Analytics
+            <span class="location">📍 Remote (Worldwide)</span>
+          </div>
+          <div class="meta">
+            <span class="badge" style="background:#0ea5e9;color:#fff">
+              REMOTE
+            </span>
+            <span class="source-badge">🔗 Test</span>
+            <span class="salary">💰 $20,000–$35,000/year</span>
+          </div>
+        </div>
+        <div class="score-circle" style="border-color:#f59e0b; color:#f59e0b">
+          <span class="score-number">62</span>
+          <span class="score-pct">%</span>
+          <span class="score-label">Good Match</span>
+        </div>
+      </div>
+
+      <div class="score-bar-container">
+        <div class="score-bar" style="width:62%; background:linear-gradient(90deg, #f59e0b, #d97706)"></div>
+      </div>
+
+      <div class="match-reasons">
+        <strong>Why You're a Match:</strong>
+        <ul><li>✅ Python skills directly match the job requirements</li><li>✅ Experience level aligns with junior/entry requirements</li></ul>
+      </div>
+
+      <div class="gaps"><strong>Skill Gaps:</strong><ul><li>📌 AWS</li><li>📌 Redis</li></ul></div>
+      
+        <div class="cover-letter">
+          <strong>✍️ Cover Letter Starter:</strong>
+          <p><em>"I am excited to apply for the Junior Data Engineer role at DataWave Analytics. My background in Python and web development makes me a strong fit for this opportunity."</em></p>
+        </div>
+        
+
+      <div class="card-footer">
+        <a class="apply-btn" href="https://example.com/apply/data-engineer" target="_blank">
+          🚀 Apply Now
+        </a>
+        <span class="posted-date">📅 Posted: 2026-09-17</span>
+      </div>
+    </div>
+    
+
+  </div>
+
+  <div class="page-footer">
+    <p>Generated by <strong>AI Resume Job Finder</strong> &nbsp;•&nbsp; September 17, 2026 &nbsp;•&nbsp; Powered by Google Gemini</p>
+    <p style="margin-top:6px">Jobs sourced from RemoteOK, Arbeitnow, JSearch &amp; Adzuna</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables & secrets (Never commit secrets!)
+.env
+
+# SQLite Database & Storage
+*.db
+*.sqlite3
+job_agent.db
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Tailored resumes & logs
+resumes/tailored/
+*.log
+
+# OS & IDE metadata
+.DS_Store
+.vscode/
+.idea/

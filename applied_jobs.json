@@ -1,0 +1,849 @@
+{
+  "mock-1": {
+    "job_title": "Python Backend Developer",
+    "company": "CloudTech Solutions",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://example.com/apply/python-backend",
+    "applied_at": "2026-09-16T12:06:36.073389"
+  },
+  "mock-2": {
+    "job_title": "Full Stack Developer",
+    "company": "FinEdge Startup",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://example.com/apply/fullstack",
+    "applied_at": "2026-09-16T12:06:38.082043"
+  },
+  "mock-3": {
+    "job_title": "Junior Data Engineer",
+    "company": "DataWave Analytics",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://example.com/apply/data-engineer",
+    "applied_at": "2026-09-16T12:06:40.087542"
+  },
+  "remoteok-1135259": {
+    "job_title": "Asistente de Marketing",
+    "company": "Universia PerÃº",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://remoteOK.com/remote-jobs/remote-asistente-de-marketing-universia-peru-1135259",
+    "applied_at": "2026-09-16T12:30:55.019142"
+  },
+  "remoteok-1135311": {
+    "job_title": "Google Review",
+    "company": "PreciseCal Services, Inc.",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://remoteOK.com/remote-jobs/remote-google-review-precisecal-services-inc-1135311",
+    "applied_at": "2026-09-16T12:31:07.097406"
+  },
+  "remoteok-1135208": {
+    "job_title": "Technician",
+    "company": "Radina Group",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://remoteOK.com/remote-jobs/remote-technician-radina-group-1135208",
+    "applied_at": "2026-09-16T12:31:18.592746"
+  },
+  "arbeitnow-steuerberater-in-grunberg-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-444358": {
+    "job_title": "Steuerberater (m/w/d) in Grünberg, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-grunberg-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-444358",
+    "applied_at": "2026-09-16T12:31:32.374800"
+  },
+  "arbeitnow-steuerberater-in-doberschutz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-44590": {
+    "job_title": "Steuerberater (m/w/d) in Doberschütz, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-doberschutz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-44590",
+    "applied_at": "2026-09-16T12:31:46.912274"
+  },
+  "arbeitnow-steuerberater-in-mundelsheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-163252": {
+    "job_title": "Steuerberater (m/w/d) in Mundelsheim, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-mundelsheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-163252",
+    "applied_at": "2026-09-16T12:32:01.172759"
+  },
+  "arbeitnow-steuerberater-in-vaihingen-an-der-enz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-268258": {
+    "job_title": "Steuerberater (m/w/d) in Vaihingen an der Enz, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-vaihingen-an-der-enz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-268258",
+    "applied_at": "2026-09-16T12:32:17.247862"
+  },
+  "arbeitnow-steuerberater-in-oberottmarshausen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-49727": {
+    "job_title": "Steuerberater (m/w/d) in Oberottmarshausen, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-oberottmarshausen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-49727",
+    "applied_at": "2026-09-16T12:32:33.091930"
+  },
+  "arbeitnow-steuerberater-in-neuburg-am-inn-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-471261": {
+    "job_title": "Steuerberater (m/w/d) in Neuburg am Inn, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-neuburg-am-inn-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-471261",
+    "applied_at": "2026-09-16T12:32:49.771011"
+  },
+  "arbeitnow-steuerberater-in-otisheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-58224": {
+    "job_title": "Steuerberater (m/w/d) in Ötisheim, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-otisheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-58224",
+    "applied_at": "2026-09-16T12:33:10.826681"
+  },
+  "arbeitnow-steuerberater-in-mittelstetten-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-351027": {
+    "job_title": "Steuerberater (m/w/d) in Mittelstetten, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€",
+    "company": "Taxtalente.de",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-mittelstetten-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-351027",
+    "applied_at": "2026-09-16T12:33:30.647353"
+  },
+  "arbeitnow-werkstudentin-marketplace-e-commerce-rostock-186765": {
+    "job_title": "Werkstudentin Marketplace / E-Commerce (m/w/d)",
+    "company": "Gusti Leder GmbH",
+    "method": "web",
+    "status": "partial",
+    "notes": "https://www.arbeitnow.com/jobs/companies/gusti-leder-gmbh/werkstudentin-marketplace-e-commerce-rostock-186765",
+    "applied_at": "2026-09-16T12:33:48.138986"
+  },
+  "arbeitnow-werkstudent-patient-operations-office-frankfurt-382457": {
+    "job_title": "Werkstudent Patient Operations (m/w/d)*",
+    "company": "Bloomwell Group GmbH",
+    "method": "web",
+    "status": "partial",
+    "notes": "https://www.arbeitnow.com/jobs/companies/bloomwell-group-gmbh/werkstudent-patient-operations-office-frankfurt-382457",
+    "applied_at": "2026-09-16T12:34:02.290049"
+  },
+  "arbeitnow-werkstudent-im-bereich-isms-munchen-124608": {
+    "job_title": "Werkstudent (m/w/d) im Bereich ISMS",
+    "company": "neoshare",
+    "method": "web",
+    "status": "partial",
+    "notes": "https://www.arbeitnow.com/jobs/companies/neoshare/werkstudent-im-bereich-isms-munchen-124608",
+    "applied_at": "2026-09-16T12:34:16.760660"
+  },
+  "arbeitnow-remote-laravel-senior-backend-developer-skaliere-mit-uns-auf-millionen-traffic-berlin-246897": {
+    "job_title": "Laravel Senior Backend Developer (m/w/d) - Skaliere mit uns auf Millionen-Traffic",
+    "company": "Kettner Edelmetalle",
+    "method": "web",
+    "status": "partial",
+    "notes": "https://www.arbeitnow.com/jobs/companies/kettner-edelmetalle/remote-laravel-senior-backend-developer-skaliere-mit-uns-auf-millionen-traffic-berlin-246897",
+    "applied_at": "2026-09-16T12:34:33.215042"
+  },
+  "linkedin-172923554110009152": {
+    "job_title": "Microservices JAVA-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328",
+    "applied_at": "2026-09-16T12:54:43.506314"
+  },
+  "linkedin--4256019344582223444": {
+    "job_title": "Software Developer (Java)",
+    "company": "Charles Schwab India",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661",
+    "applied_at": "2026-09-16T12:55:00.578617"
+  },
+  "linkedin-1325604120049454129": {
+    "job_title": "Microservices JAVA with AWS-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355",
+    "applied_at": "2026-09-16T12:55:19.092876"
+  },
+  "linkedin--7560687151265016951": {
+    "job_title": "Full Stack Java Engineer",
+    "company": "Redwood Software",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704",
+    "applied_at": "2026-09-16T12:55:34.324879"
+  },
+  "linkedin--9130531396179180832": {
+    "job_title": "Java Spring Boot Backend Developer",
+    "company": "Prasanz",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508",
+    "applied_at": "2026-09-16T12:55:49.079846"
+  },
+  "linkedin-7168357504033949647": {
+    "job_title": "Java Backend Engineer",
+    "company": "Ascendion",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694",
+    "applied_at": "2026-09-16T12:56:06.596114"
+  },
+  "linkedin-8184254058901188798": {
+    "job_title": "Software Engineer - Java, Spring Boot and Microservices",
+    "company": "Apple",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132",
+    "applied_at": "2026-09-16T12:56:23.182183"
+  },
+  "linkedin--7526005839802858677": {
+    "job_title": "Software Developer (Java)",
+    "company": "Charles Schwab India",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661",
+    "applied_at": "2026-09-16T13:05:47.564269"
+  },
+  "linkedin-52518444885831919": {
+    "job_title": "Java Backend Engineer",
+    "company": "Ascendion",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694",
+    "applied_at": "2026-09-16T13:06:07.156239"
+  },
+  "linkedin--4446492110100518936": {
+    "job_title": "Java Spring Boot Backend Developer",
+    "company": "Prasanz",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508",
+    "applied_at": "2026-09-16T13:06:24.948186"
+  },
+  "linkedin--2519821949743382613": {
+    "job_title": "Backend Developer",
+    "company": "Letitbex AI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/backend-developer-at-letitbex-ai-4463299404",
+    "applied_at": "2026-09-16T13:06:46.271950"
+  },
+  "linkedin--1210404436345274355": {
+    "job_title": "Full Stack Java Engineer",
+    "company": "Redwood Software",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704",
+    "applied_at": "2026-09-16T13:07:07.518565"
+  },
+  "remoteok-1136188": {
+    "job_title": "Java Developer",
+    "company": "Clera",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://remoteOK.com/remote-jobs/remote-java-developer-clera-1136188",
+    "applied_at": "2026-09-16T13:07:21.984342"
+  },
+  "linkedin--5291930454962565165": {
+    "job_title": "Software Engineer - Java, Spring Boot and Microservices",
+    "company": "Apple",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132",
+    "applied_at": "2026-09-16T13:07:40.804785"
+  },
+  "linkedin-3847953813082298237": {
+    "job_title": "Software Engineer - Backend Services",
+    "company": "Truveta",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-backend-services-at-truveta-4434639696",
+    "applied_at": "2026-09-16T13:07:58.729097"
+  },
+  "linkedin-8898053444699196693": {
+    "job_title": "Microservices JAVA-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328",
+    "applied_at": "2026-09-16T13:08:14.196115"
+  },
+  "linkedin-9000297108527870432": {
+    "job_title": "Microservices JAVA with AWS-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355",
+    "applied_at": "2026-09-16T13:08:30.300698"
+  },
+  "linkedin-1219070146088592110": {
+    "job_title": "Software Developer - Python, Hyderabad",
+    "company": "Schrödinger",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-python-hyderabad-at-schr%C3%B6dinger-4448747440",
+    "applied_at": "2026-09-16T13:08:44.407487"
+  },
+  "linkedin--4626365381025266733": {
+    "job_title": "Python Developer",
+    "company": "Tata Consultancy Services",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/python-developer-at-tata-consultancy-services-4463234487",
+    "applied_at": "2026-09-16T13:08:59.573751"
+  },
+  "linkedin-4334810370684404951": {
+    "job_title": "Python Developer",
+    "company": "Infosys",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/python-developer-at-infosys-4457672035",
+    "applied_at": "2026-09-16T13:09:46.989298"
+  },
+  "linkedin-6417177334782464745": {
+    "job_title": "Python Developer",
+    "company": "ASTIKA SOFTWARE TECHNOLOGIES PRIVATE LIMITED",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/python-developer-at-astika-software-technologies-private-limited-4458865973",
+    "applied_at": "2026-09-16T13:10:05.488063"
+  },
+  "linkedin-679545606078030235": {
+    "job_title": "Python Developer",
+    "company": "Rehlat",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/python-developer-at-rehlat-4456499551",
+    "applied_at": "2026-09-16T13:10:21.993679"
+  },
+  "linkedin-3353034179632253771": {
+    "job_title": "Java Spring Boot Backend Developer",
+    "company": "Prasanz",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508",
+    "applied_at": "2026-09-17T10:04:38.135919"
+  },
+  "linkedin--4477835310900983210": {
+    "job_title": "Java API  Developer",
+    "company": "CGI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-api-developer-at-cgi-4468304187",
+    "applied_at": "2026-09-17T10:05:03.613135"
+  },
+  "linkedin--1986610150735525073": {
+    "job_title": "SoftWare Engineer – Java Backend API",
+    "company": "CGI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-%E2%80%93-java-backend-api-at-cgi-4468298324",
+    "applied_at": "2026-09-17T10:05:24.067977"
+  },
+  "linkedin-2775284576377784357": {
+    "job_title": "Software Developer (Java)",
+    "company": "Charles Schwab India",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661",
+    "applied_at": "2026-09-17T10:05:43.617365"
+  },
+  "linkedin--7943886541156551784": {
+    "job_title": "Java Backend Engineer",
+    "company": "Ascendion",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694",
+    "applied_at": "2026-09-17T10:06:03.733550"
+  },
+  "linkedin--8780692724739229923": {
+    "job_title": "Full Stack Java Engineer",
+    "company": "Redwood Software",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704",
+    "applied_at": "2026-09-17T10:06:37.064791"
+  },
+  "linkedin-6161201299513396331": {
+    "job_title": "Software Engineer - Backend Services",
+    "company": "Truveta",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-backend-services-at-truveta-4434639696",
+    "applied_at": "2026-09-17T10:07:06.117966"
+  },
+  "linkedin-1346371835254378289": {
+    "job_title": "Software Engineer - Java, Spring Boot and Microservices",
+    "company": "Apple",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132",
+    "applied_at": "2026-09-17T10:07:31.093503"
+  },
+  "linkedin-4073064344432254492": {
+    "job_title": "Microservices JAVA-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328",
+    "applied_at": "2026-09-17T10:07:49.664779"
+  },
+  "linkedin-7311695455132833959": {
+    "job_title": "Microservices JAVA with AWS-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355",
+    "applied_at": "2026-09-17T10:08:05.170449"
+  },
+  "linkedin-6343747359549062737": {
+    "job_title": "SDE II - Backend",
+    "company": "Arrise Solutions (India) Pvt. Ltd.",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/sde-ii-backend-at-arrise-solutions-india-pvt-ltd-4464862749",
+    "applied_at": "2026-09-17T10:08:22.659372"
+  },
+  "linkedin-7009890452273740892": {
+    "job_title": "Software Development Engineer II, Backend",
+    "company": "ZöTok.AI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-development-engineer-ii-backend-at-z%C3%B6tok-ai-4456878793",
+    "applied_at": "2026-09-17T10:08:40.318693"
+  },
+  "linkedin--1416432840258664984": {
+    "job_title": "Software Engineer II",
+    "company": "GHX",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-ghx-4465510219",
+    "applied_at": "2026-09-17T10:08:58.472123"
+  },
+  "arbeitnow-software-engineer-data-all-genders-koln-128715": {
+    "job_title": "Software Engineer - Data (All Genders)",
+    "company": "PREMATCH Sports GmbH",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://www.arbeitnow.com/jobs/companies/prematch-sports-gmbh/software-engineer-data-all-genders-koln-128715",
+    "applied_at": "2026-09-17T10:09:12.705179"
+  },
+  "linkedin-3207336628006160096": {
+    "job_title": "Software Developer (Java)",
+    "company": "Charles Schwab India",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661",
+    "applied_at": "2026-09-17T10:18:24.784622"
+  },
+  "linkedin-5915349452597392977": {
+    "job_title": "Java Spring Boot Backend Developer",
+    "company": "Prasanz",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508",
+    "applied_at": "2026-09-17T10:18:40.374395"
+  },
+  "linkedin-1173819955500544753": {
+    "job_title": "Java API  Developer",
+    "company": "CGI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-api-developer-at-cgi-4468304187",
+    "applied_at": "2026-09-17T10:18:55.476530"
+  },
+  "linkedin--930663060930793095": {
+    "job_title": "SoftWare Engineer – Java Backend API",
+    "company": "CGI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-%E2%80%93-java-backend-api-at-cgi-4468298324",
+    "applied_at": "2026-09-17T10:19:14.832453"
+  },
+  "linkedin-1139861931833557123": {
+    "job_title": "Java Backend Engineer",
+    "company": "Ascendion",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694",
+    "applied_at": "2026-09-17T10:19:37.680056"
+  },
+  "linkedin--287623285414895086": {
+    "job_title": "Full Stack Java Engineer",
+    "company": "Redwood Software",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704",
+    "applied_at": "2026-09-17T10:19:51.800098"
+  },
+  "linkedin--7614820087453289772": {
+    "job_title": "Software Engineer - Java, Spring Boot and Microservices",
+    "company": "Apple",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132",
+    "applied_at": "2026-09-17T10:20:06.019223"
+  },
+  "linkedin-8862858411936114814": {
+    "job_title": "Software Engineer - Backend Services",
+    "company": "Truveta",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-backend-services-at-truveta-4434639696",
+    "applied_at": "2026-09-17T10:20:20.206727"
+  },
+  "linkedin-5424976530692662058": {
+    "job_title": "Microservices JAVA-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328",
+    "applied_at": "2026-09-17T10:20:36.105258"
+  },
+  "linkedin--4082366590245414075": {
+    "job_title": "Microservices JAVA with AWS-Software Engineer II",
+    "company": "Deloitte",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355",
+    "applied_at": "2026-09-17T10:20:51.081486"
+  },
+  "linkedin-5998799044404869645": {
+    "job_title": "SDE II - Backend",
+    "company": "Arrise Solutions (India) Pvt. Ltd.",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/sde-ii-backend-at-arrise-solutions-india-pvt-ltd-4464862749",
+    "applied_at": "2026-09-17T10:21:05.093289"
+  },
+  "linkedin--7788166051267028": {
+    "job_title": "Software Development Engineer II, Backend",
+    "company": "ZöTok.AI",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-development-engineer-ii-backend-at-z%C3%B6tok-ai-4456878793",
+    "applied_at": "2026-09-17T10:21:19.310124"
+  },
+  "linkedin--7396661450910529345": {
+    "job_title": "Software Engineer II",
+    "company": "GHX",
+    "method": "manual",
+    "status": "pending",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-ghx-4465510219",
+    "applied_at": "2026-09-17T10:21:32.997892"
+  },
+  "remoteok-1135555": {
+    "job_title": "AI Intern",
+    "company": "CertifyOS",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://remoteOK.com/remote-jobs/remote-ai-intern-certifyos-1135555",
+    "applied_at": "2026-09-17T10:27:05.620473"
+  },
+  "linkedin-8715355743329881172": {
+    "job_title": "SoftWare Engineer – Java Backend API",
+    "company": "CGI",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-%E2%80%93-java-backend-api-at-cgi-4468298324",
+    "applied_at": "2026-09-17T10:27:16.476904"
+  },
+  "linkedin--6955926591643899216": {
+    "job_title": "Microservices JAVA-Software Engineer II",
+    "company": "Deloitte",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-software-engineer-ii-at-deloitte-4463250328",
+    "applied_at": "2026-09-17T10:27:26.622711"
+  },
+  "linkedin-5981690496115433884": {
+    "job_title": "Software Developer (Java)",
+    "company": "Charles Schwab India",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-developer-java-at-charles-schwab-india-4443274661",
+    "applied_at": "2026-09-17T10:27:37.076610"
+  },
+  "linkedin-4973374488071891181": {
+    "job_title": "Microservices JAVA with AWS-Software Engineer II",
+    "company": "Deloitte",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/microservices-java-with-aws-software-engineer-ii-at-deloitte-4464861355",
+    "applied_at": "2026-09-17T10:27:49.002650"
+  },
+  "linkedin-5932042011741810244": {
+    "job_title": "Full Stack Java Engineer",
+    "company": "Redwood Software",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/full-stack-java-engineer-at-redwood-software-4455419704",
+    "applied_at": "2026-09-17T10:27:57.541353"
+  },
+  "linkedin-1008437254418142659": {
+    "job_title": "Java Spring Boot Backend Developer",
+    "company": "Prasanz",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/java-spring-boot-backend-developer-at-prasanz-4448057508",
+    "applied_at": "2026-09-17T10:28:06.749036"
+  },
+  "linkedin--5352068097121974298": {
+    "job_title": "Java Backend Engineer",
+    "company": "Ascendion",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/java-backend-engineer-at-ascendion-4460971694",
+    "applied_at": "2026-09-17T10:28:15.246044"
+  },
+  "linkedin-8879491710819895125": {
+    "job_title": "Java API  Developer",
+    "company": "CGI",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/java-api-developer-at-cgi-4468304187",
+    "applied_at": "2026-09-17T10:28:24.601942"
+  },
+  "linkedin--8062580093648074540": {
+    "job_title": "Software Engineer - Java, Spring Boot and Microservices",
+    "company": "Apple",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-and-microservices-at-apple-4460995132",
+    "applied_at": "2026-09-17T10:28:33.577359"
+  },
+  "arbeitnow-team-lead-full-stack-engineer-liveeo-gmbh-berlin-office-hybrid-479781": {
+    "job_title": "Team Lead Full-Stack Engineer (f/m/x)",
+    "company": "LiveEO GmbH",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/liveeo-gmbh/team-lead-full-stack-engineer-liveeo-gmbh-berlin-office-hybrid-479781",
+    "applied_at": "2026-09-17T10:28:44.724947"
+  },
+  "arbeitnow-system-software-engineer-gn-cloud-simulation-dresden-192500": {
+    "job_title": "System Software Engineer (gn) Cloud & Simulation",
+    "company": "Wandelbots GmbH",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/wandelbots-gmbh/system-software-engineer-gn-cloud-simulation-dresden-192500",
+    "applied_at": "2026-09-17T10:28:55.973180"
+  },
+  "linkedin--3948281862736907622": {
+    "job_title": "Developer III - Software Engineering",
+    "company": "UST",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/developer-iii-software-engineering-at-ust-4462520665",
+    "applied_at": "2026-09-17T10:29:24.240232"
+  },
+  "linkedin--8277342138881786680": {
+    "job_title": "Software Engineer III - (Java, AWS)",
+    "company": "JPMorganChase",
+    "fingerprint": "jpmorganchase:softwareengineeriiijavaaws",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-iii-java-aws-at-jpmorganchase-4466641695",
+    "applied_at": "2026-09-18T13:26:20.688736"
+  },
+  "linkedin--3202712732050255338": {
+    "job_title": "Software Engineer III- Java",
+    "company": "JPMorganChase",
+    "fingerprint": "jpmorganchase:softwareengineeriiijava",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-engineer-iii-java-at-jpmorganchase-4468800997",
+    "applied_at": "2026-09-18T13:26:27.868363"
+  },
+  "arbeitnow-product-engineer-software-builder-regensburg-735": {
+    "job_title": "Product Engineer / Software Builder (m/w/d)",
+    "company": "321 MED GmbH",
+    "fingerprint": "321medgmbh:productengineersoftwarebuildermwd",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/321-med-gmbh/product-engineer-software-builder-regensburg-735",
+    "applied_at": "2026-09-18T13:26:38.942556"
+  },
+  "arbeitnow-junior-ai-automation-specialist-vor-ort-in-dortmund-258748": {
+    "job_title": "Junior AI-Automation Specialist (m/w/d) – vor Ort in Dortmund",
+    "company": "ATZ AG",
+    "fingerprint": "atzag:junioraiautomationspecialistmwdvorortindortmund",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/atz-ag/junior-ai-automation-specialist-vor-ort-in-dortmund-258748",
+    "applied_at": "2026-09-19T09:34:12.813293"
+  },
+  "arbeitnow-finance-ai-automation-intern-remote-part-time-germany-30155": {
+    "job_title": "Finance & AI Automation Intern (Remote Part-time)",
+    "company": "Soda Data Nv",
+    "fingerprint": "sodadatanv:financeaiautomationinternremoteparttime",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/soda-data-nv/finance-ai-automation-intern-remote-part-time-germany-30155",
+    "applied_at": "2026-09-19T09:34:23.418525"
+  },
+  "arbeitnow-finance-ai-automation-intern-remote-full-time-germany-308319": {
+    "job_title": "Finance & AI Automation Intern (Remote Full-time)",
+    "company": "Soda Data Nv",
+    "fingerprint": "sodadatanv:financeaiautomationinternremotefulltime",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://www.arbeitnow.com/jobs/companies/soda-data-nv/finance-ai-automation-intern-remote-full-time-germany-308319",
+    "applied_at": "2026-09-19T09:34:35.419666"
+  },
+  "linkedin-5449046185207476618": {
+    "job_title": "Java Fullstack Engineer",
+    "company": "Ascendion",
+    "fingerprint": "ascendion:javafullstackengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/java-fullstack-engineer-at-ascendion-4466858993",
+    "applied_at": "2026-09-19T09:34:45.925814"
+  },
+  "linkedin-3021167060131147347": {
+    "job_title": "Java Developer",
+    "company": "PIPRA Solutions",
+    "fingerprint": "piprasolutions:javadeveloper",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/java-developer-at-pipra-solutions-4414352204",
+    "applied_at": "2026-09-19T09:35:02.091008"
+  },
+  "linkedin-4729018950509095445": {
+    "job_title": "SW QA Engineer - Python & CLI Testing",
+    "company": "Siemens Digital Industries Software",
+    "fingerprint": "siemensdigitalindustriessoftware:swqaengineerpythonclitesting",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/sw-qa-engineer-python-cli-testing-at-siemens-digital-industries-software-4464567316",
+    "applied_at": "2026-09-19T10:59:20.459191"
+  },
+  "linkedin--9025663763128596108": {
+    "job_title": "Quality Assurance Engineer",
+    "company": "SourcingXPress",
+    "fingerprint": "sourcingxpress:qualityassuranceengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/quality-assurance-engineer-at-sourcingxpress-4420939520",
+    "applied_at": "2026-09-19T10:59:30.200086"
+  },
+  "linkedin-1315272571800527780": {
+    "job_title": "Engineer II, Software Dev Test QE",
+    "company": "LPL Financial Global Capability Center",
+    "fingerprint": "lplfinancialglobalcapabilitycenter:engineeriisoftwaredevtestqe",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/engineer-ii-software-dev-test-qe-at-lpl-financial-global-capability-center-4465022012",
+    "applied_at": "2026-09-19T10:59:42.007717"
+  },
+  "linkedin-8741070072694511489": {
+    "job_title": "Associate Software Engineer, Test",
+    "company": "Graphik Dimensions",
+    "fingerprint": "graphikdimensions:associatesoftwareengineertest",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/associate-software-engineer-test-at-graphik-dimensions-4464464128",
+    "applied_at": "2026-09-19T10:59:50.531635"
+  },
+  "linkedin--7882053431443169346": {
+    "job_title": "Salesforce QA Engineer",
+    "company": "SourcingXPress",
+    "fingerprint": "sourcingxpress:salesforceqaengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/salesforce-qa-engineer-at-sourcingxpress-4422930542",
+    "applied_at": "2026-09-19T11:00:02.136785"
+  },
+  "linkedin-7785998435721592277": {
+    "job_title": "Sr QA Engineer",
+    "company": "Anblicks",
+    "fingerprint": "anblicks:srqaengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/sr-qa-engineer-at-anblicks-4398632046",
+    "applied_at": "2026-09-19T11:00:11.490602"
+  },
+  "linkedin-1648025825335945336": {
+    "job_title": "PRODUCT TEST ENGINEER L3",
+    "company": "Wipro",
+    "fingerprint": "wipro:producttestengineerl3",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/product-test-engineer-l3-at-wipro-4457093299",
+    "applied_at": "2026-09-19T11:00:21.635971"
+  },
+  "linkedin-987947883105682731": {
+    "job_title": "QA Engineer",
+    "company": "InfoSwift Corp",
+    "fingerprint": "infoswiftcorp:qaengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/qa-engineer-at-infoswift-corp-4434409136",
+    "applied_at": "2026-09-19T11:00:30.655376"
+  },
+  "linkedin--4620043913765788991": {
+    "job_title": "Test Engineer",
+    "company": "Endpoint Clinical",
+    "fingerprint": "endpointclinical:testengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/test-engineer-at-endpoint-clinical-4447752600",
+    "applied_at": "2026-09-19T11:00:38.842049"
+  },
+  "linkedin-2921392832654302237": {
+    "job_title": "QA Analyst",
+    "company": "MatrixCare",
+    "fingerprint": "matrixcare:qaanalyst",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/qa-analyst-at-matrixcare-4084144866",
+    "applied_at": "2026-09-19T11:00:48.615816"
+  },
+  "linkedin--2492869300313230163": {
+    "job_title": "Sr Test Engineer",
+    "company": "Side",
+    "fingerprint": "side:srtestengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/sr-test-engineer-at-side-4465129622",
+    "applied_at": "2026-09-19T11:00:56.217582"
+  },
+  "linkedin--8312045315460895753": {
+    "job_title": "QA Automation Engineer (Playwright)",
+    "company": "Ness Digital Engineering",
+    "fingerprint": "nessdigitalengineering:qaautomationengineerplaywright",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/qa-automation-engineer-playwright-at-ness-digital-engineering-4463692741",
+    "applied_at": "2026-09-19T11:01:02.956869"
+  },
+  "linkedin-5630553052018872518": {
+    "job_title": "Software Test Engineer",
+    "company": "ktree.com",
+    "fingerprint": "ktreecom:softwaretestengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/software-test-engineer-at-ktree-com-4364368099",
+    "applied_at": "2026-09-19T11:01:14.507940"
+  },
+  "linkedin--2074214505923552041": {
+    "job_title": "Automation Selenium Tosca-SDET-II",
+    "company": "Deloitte",
+    "fingerprint": "deloitte:automationseleniumtoscasdetii",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/automation-selenium-tosca-sdet-ii-at-deloitte-4464897496",
+    "applied_at": "2026-09-19T11:01:21.529640"
+  },
+  "linkedin--8415292548333413265": {
+    "job_title": "Test Automation Engineer",
+    "company": "Capgemini Engineering",
+    "fingerprint": "capgeminiengineering:testautomationengineer",
+    "method": "web",
+    "status": "submitted",
+    "notes": "https://in.linkedin.com/jobs/view/test-automation-engineer-at-capgemini-engineering-4468662078",
+    "applied_at": "2026-09-19T11:01:30.109257"
+  }
+}
